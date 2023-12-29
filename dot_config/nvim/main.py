@@ -1,4 +1,3 @@
-from loguru import logger
+import os
 
-logger.info("test")
-
+os.system("")
