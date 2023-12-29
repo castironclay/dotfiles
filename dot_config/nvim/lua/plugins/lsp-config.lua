@@ -12,6 +12,7 @@ return {
         ensure_installed = {
           "lua_ls",
           "pyright",
+          "jedi_language_server",
         }
       })
     end
@@ -21,6 +22,7 @@ return {
     config = function()
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({})
+      lspconfig.jedi_language_server.setup({})
       lspconfig.pyright.setup({
         filetypes = {"python"}
       })
