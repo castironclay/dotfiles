@@ -17,4 +17,13 @@ return {
 			vim.cmd.colorscheme("tokyonight")
 		end,
 	},
+	{
+		"danymat/neogen",
+		dependencies = "nvim-treesitter/nvim-treesitter",
+		version = "*",
+		config = function()
+      require("neogen").setup({})
+			vim.keymap.set("n", "<leader>ds", ":Neogen<CR>", {})
+		end,
+	},
 }

@@ -24,6 +24,7 @@ return {
 			local lspconfig = require("lspconfig")
 			lspconfig.lua_ls.setup({})
 			lspconfig.jedi_language_server.setup({})
+			lspconfig.graphql.setup({})
 			lspconfig.marksman.setup({})
 			lspconfig.pyright.setup({
 				filetypes = { "python" },
