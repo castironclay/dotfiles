@@ -28,6 +28,8 @@ return {
     config = function()
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({})
+      lspconfig.tflint.setup({})
+      lspconfig.terraformls.setup({})
       lspconfig.pyright.setup({
         filetypes = { "python" },
       })
