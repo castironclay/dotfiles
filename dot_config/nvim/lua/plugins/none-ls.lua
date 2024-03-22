@@ -11,7 +11,6 @@ return {
         null_ls.builtins.formatting.isort,
 
         -- Diagnostics
-        null_ls.builtins.diagnostics.ruff,
         null_ls.builtins.diagnostics.mypy,
 
         -- Completion
